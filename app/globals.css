@@ -38,3 +38,14 @@ p {
     height: 100%;
   }
 }
+
+.mainBtn {
+  background: linear-gradient(90deg, #4ca5ff, #b573f8);
+}
+
+.altBtn {
+  background: linear-gradient(90deg, #4ca5ff, #b573f8);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

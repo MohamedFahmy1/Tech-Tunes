@@ -1,7 +1,7 @@
 import { textStyle } from "@/utils/Styles";
-import { Box, Container, Stack, Typography } from "@mui/material";
+import { Box, Button, Container, Stack, Typography } from "@mui/material";
 import Image from "next/image";
-import headphone from "@/images/head.png";
+import headphone from "@/images/h.png";
 
 export default function Home() {
   return (
@@ -33,7 +33,7 @@ export default function Home() {
               fontSize={30}
               fontWeight={"bold"}
             >
-              Best Headphones
+              New Arrival
             </Typography>
             <Typography
               variant="h1"
@@ -46,6 +46,32 @@ export default function Home() {
             <Typography variant="subtitle1" color="white" fontWeight={"bold"}>
               UP TO 50% OFF
             </Typography>
+            <Stack
+              direction={"row"}
+              spacing={2}
+              sx={{
+                a: {
+                  borderRadius: "20px",
+                },
+              }}
+            >
+              <Button
+                className="altBtn"
+                variant="outlined"
+                size="large"
+                href="/allProducts"
+              >
+                Categories
+              </Button>
+              <Button
+                className="mainBtn"
+                variant="contained"
+                href="/allProducts"
+                size="large"
+              >
+                Shop Now
+              </Button>
+            </Stack>
           </Stack>
           <Image src={headphone} alt="headphone" height={600} />
         </Stack>
