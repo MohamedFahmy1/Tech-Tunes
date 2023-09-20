@@ -5,7 +5,7 @@ import headphone from "@/images/h.png";
 
 const Landing = () => {
   return (
-    <Box component={"main"}>
+    <Box component={"section"} minHeight={"84vh"}>
       <Container maxWidth={"lg"}>
         <video autoPlay muted loop playsInline className="back-video">
           <source src={require("../images/landing.mp4")} type="video/mp4" />
@@ -60,6 +60,7 @@ const Landing = () => {
                 variant="outlined"
                 size="large"
                 href="/allProducts"
+                sx={{ border: "2px solid", "&:hover": { border: "2px solid" } }}
               >
                 Categories
               </Button>

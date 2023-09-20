@@ -10,18 +10,10 @@ import {
   ShoppingCartOutlined,
 } from "@mui/icons-material";
 import { textStyle } from "@/utils/Styles";
+
 const NavBar = () => {
   return (
-    <Box
-      component={"header"}
-      bgcolor={"transparent"}
-      p={2}
-      position={"sticky"}
-      left={0}
-      top={0}
-      zIndex={50}
-      width={"100%"}
-    >
+    <Box component={"header"} bgcolor={"transparent"} p={2} width={"100%"}>
       <Container maxWidth="lg">
         <Stack
           direction={"row"}

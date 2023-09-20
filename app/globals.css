@@ -49,3 +49,9 @@ p {
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+@media (min-width: 1200px) {
+  .catCards img {
+    position: relative;
+  }
+}
